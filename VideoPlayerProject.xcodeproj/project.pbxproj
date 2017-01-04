@@ -13,6 +13,11 @@
 		A442615D1E1BB58300781F5B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A442615B1E1BB58300781F5B /* Main.storyboard */; };
 		A442615F1E1BB58300781F5B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A442615E1E1BB58300781F5B /* Assets.xcassets */; };
 		A44261621E1BB58300781F5B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A44261601E1BB58300781F5B /* LaunchScreen.storyboard */; };
+		A442616E1E1BB5C400781F5B /* DTPlayerControlView.m in Sources */ = {isa = PBXBuildFile; fileRef = A442616C1E1BB5C400781F5B /* DTPlayerControlView.m */; };
+		A44261711E1BB69400781F5B /* UIViewAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = A44261701E1BB69400781F5B /* UIViewAdditions.m */; };
+		A44261761E1BC1D700781F5B /* NSObject+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = A44261751E1BC1D700781F5B /* NSObject+Additions.m */; };
+		A44261781E1CC2AE00781F5B /* Movie.m4v in Resources */ = {isa = PBXBuildFile; fileRef = A44261771E1CA3C100781F5B /* Movie.m4v */; };
+		A44261A41E1CEAEF00781F5B /* PlayerMedia.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A44261A31E1CEAEF00781F5B /* PlayerMedia.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +31,16 @@
 		A442615E1E1BB58300781F5B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A44261611E1BB58300781F5B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A44261631E1BB58300781F5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A44261691E1BB5C400781F5B /* DTCCPlayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTCCPlayerView.h; sourceTree = "<group>"; };
+		A442616B1E1BB5C400781F5B /* DTPlayerControlView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTPlayerControlView.h; sourceTree = "<group>"; };
+		A442616C1E1BB5C400781F5B /* DTPlayerControlView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTPlayerControlView.m; sourceTree = "<group>"; };
+		A442616F1E1BB69400781F5B /* UIViewAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIViewAdditions.h; sourceTree = "<group>"; };
+		A44261701E1BB69400781F5B /* UIViewAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIViewAdditions.m; sourceTree = "<group>"; };
+		A44261721E1BB72E00781F5B /* UIGlobal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIGlobal.h; sourceTree = "<group>"; };
+		A44261741E1BC1D700781F5B /* NSObject+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Additions.h"; sourceTree = "<group>"; };
+		A44261751E1BC1D700781F5B /* NSObject+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Additions.m"; sourceTree = "<group>"; };
+		A44261771E1CA3C100781F5B /* Movie.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = Movie.m4v; sourceTree = "<group>"; };
+		A44261A31E1CEAEF00781F5B /* PlayerMedia.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = PlayerMedia.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A44261A41E1CEAEF00781F5B /* PlayerMedia.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,6 +74,7 @@
 		A44261511E1BB58300781F5B /* VideoPlayerProject */ = {
 			isa = PBXGroup;
 			children = (
+				A44261A51E1CEBEF00781F5B /* PlayerMeidaManager */,
 				A44261551E1BB58300781F5B /* AppDelegate.h */,
 				A44261561E1BB58300781F5B /* AppDelegate.m */,
 				A44261581E1BB58300781F5B /* ViewController.h */,
@@ -74,9 +91,26 @@
 		A44261521E1BB58300781F5B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				A442616F1E1BB69400781F5B /* UIViewAdditions.h */,
+				A44261701E1BB69400781F5B /* UIViewAdditions.m */,
+				A44261741E1BC1D700781F5B /* NSObject+Additions.h */,
+				A44261751E1BC1D700781F5B /* NSObject+Additions.m */,
+				A44261A31E1CEAEF00781F5B /* PlayerMedia.a */,
+				A44261721E1BB72E00781F5B /* UIGlobal.h */,
+				A44261771E1CA3C100781F5B /* Movie.m4v */,
 				A44261531E1BB58300781F5B /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A44261A51E1CEBEF00781F5B /* PlayerMeidaManager */ = {
+			isa = PBXGroup;
+			children = (
+				A44261691E1BB5C400781F5B /* DTCCPlayerView.h */,
+				A442616B1E1BB5C400781F5B /* DTPlayerControlView.h */,
+				A442616C1E1BB5C400781F5B /* DTPlayerControlView.m */,
+			);
+			name = PlayerMeidaManager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -105,6 +139,7 @@
 		A44261471E1BB58300781F5B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = DT;
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = 100TAL;
 				TargetAttributes = {
@@ -136,6 +171,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A44261781E1CC2AE00781F5B /* Movie.m4v in Resources */,
 				A44261621E1BB58300781F5B /* LaunchScreen.storyboard in Resources */,
 				A442615F1E1BB58300781F5B /* Assets.xcassets in Resources */,
 				A442615D1E1BB58300781F5B /* Main.storyboard in Resources */,
@@ -150,8 +186,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				A442615A1E1BB58300781F5B /* ViewController.m in Sources */,
+				A44261711E1BB69400781F5B /* UIViewAdditions.m in Sources */,
+				A442616E1E1BB5C400781F5B /* DTPlayerControlView.m in Sources */,
 				A44261571E1BB58300781F5B /* AppDelegate.m in Sources */,
 				A44261541E1BB58300781F5B /* main.m in Sources */,
+				A44261761E1BC1D700781F5B /* NSObject+Additions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,7 +303,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = VideoPlayerProject/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/VideoPlayerProject",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.zhb.VideoPlayerProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -275,7 +319,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = VideoPlayerProject/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/VideoPlayerProject",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.zhb.VideoPlayerProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
