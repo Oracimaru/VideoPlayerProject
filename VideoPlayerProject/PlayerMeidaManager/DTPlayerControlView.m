@@ -291,7 +291,7 @@ typedef NS_ENUM(NSInteger, GestureType){
 - (void)playButtonPressed {
     if (self.playerEvent) {
         self.playerEvent(nil, PlayEvent_PlayAndPause);
-    }
+    } 
 }
 - (void)correctButtonPressed{
     if (self.playerEvent) {
